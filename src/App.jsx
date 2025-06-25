@@ -35,48 +35,50 @@ function App() {
   return (
     <div style={{ padding: "50px", backgroundColor: bgColor }}>
       <Container maxWidth="lg">
-        <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}>
-          <Box sx={{ width: "40%", height: "400px" }}>
-            <header style={state === "css" || state === "js" ? { display: "flex", gap: "20px", fontSize: "30px", color: "red" } : {}}>
-              <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}>item 1</div>
-              <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}>item 2</div>
-              <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}> item 3</div>
-              <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}>item 4</div>
-            </header>
-            <h1 style={state === "css" || state === "js" ? { fontSize: "60px", padding: "20px" } : {}}>Ich bin ein Haupttitel</h1>
-            <p style={state === "css" || state === "js" ? { fontSize: "40px", padding: "20px", color: "green" } : {}}>Ich bin ein Text</p>
-            <button onClick={handleChangeColor} style={state === "css" || state === "js" ? { padding: "10px", fontSize: "25px" } : {}}>
-              Druck mich bitte, um die Farbe zu wechseln
-            </button>
-
-            <Stack sx={{ marginTop: "50px" }} direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}>
-              <Button onClick={(e) => handleClickButton(e)} variant="outlined">
-                Html
-              </Button>
-              <Button onClick={(e) => handleClickButton(e)} variant="outlined">
-                Html + CSS
-              </Button>
-              <Button onClick={(e) => handleClickButton(e)} variant="outlined">
-                Html + CSS + JS
-              </Button>
-            </Stack>
-          </Box>
-          <Box sx={{ width: "40%", height: "400px", outline: "1px solid red" }}>
-            <img
-              src={state === "html" ? "https://henryegloff.com/media/How-to-Code-a-Basic-Webpage-Using-HTML-Tutorial-2.jpg" : state === "css" ? "https://miro.medium.com/v2/resize:fit:768/1*6PNOv0T34q-QFBiVSyYlcw.png" : "https://miro.medium.com/v2/resize:fit:1400/1*uiYye9J142y8fIZGRnufEw.png"}
-              alt="description"
-              style={{ width: "100%", height: "100%" }}
-            />
-          </Box>
-        </Stack>
-        <Stack spacing={2} direction="column" sx={{ marginTop: "100vh" }}>
-          <Box sx={{ marginTop: "500px" }}>
+        <Stack spacing={2} direction="column">
+          <Box>
             <Typography variant="h1" gutterBottom>
               Beruf: Softwareentwickler
             </Typography>
+            <img src="https://miro.medium.com/v2/resize:fit:938/1*n3h5wfzO2zlRdOf8itWUVw.png" alt="" />
+            <img src="https://wiki.selfhtml.org/images/thumb/7/78/HTML-CSS-JS.svg/512px-HTML-CSS-JS.svg.png" alt="" />
           </Box>
+          <Stack direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}>
+            <Box sx={{ width: "40%", height: "400px" }}>
+              <header style={state === "css" || state === "js" ? { display: "flex", gap: "20px", fontSize: "30px", color: "red" } : {}}>
+                <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}>item 1</div>
+                <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}>item 2</div>
+                <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}> item 3</div>
+                <div style={state === "css" || state === "js" ? { border: "1px solid black" } : {}}>item 4</div>
+              </header>
+              <h1 style={state === "css" || state === "js" ? { fontSize: "60px", padding: "20px" } : {}}>Ich bin ein Haupttitel</h1>
+              <p style={state === "css" || state === "js" ? { fontSize: "40px", padding: "20px", color: "green" } : {}}>Ich bin ein Text</p>
+              <button onClick={handleChangeColor} style={state === "css" || state === "js" ? { padding: "10px", fontSize: "25px" } : {}}>
+                Druck mich bitte, um die Farbe zu wechseln
+              </button>
 
-          <Box sx={{ marginTop: "500px" }}>
+              <Stack sx={{ marginTop: "50px" }} direction="row" spacing={2} divider={<Divider orientation="vertical" flexItem />}>
+                <Button onClick={(e) => handleClickButton(e)} variant="outlined">
+                  Html
+                </Button>
+                <Button onClick={(e) => handleClickButton(e)} variant="outlined">
+                  Html + CSS
+                </Button>
+                <Button onClick={(e) => handleClickButton(e)} variant="outlined">
+                  Html + CSS + JS
+                </Button>
+              </Stack>
+            </Box>
+            <Box sx={{ width: "40%", height: "400px", outline: "1px solid red" }}>
+              <img
+                src={state === "html" ? "https://henryegloff.com/media/How-to-Code-a-Basic-Webpage-Using-HTML-Tutorial-2.jpg" : state === "css" ? "https://miro.medium.com/v2/resize:fit:768/1*6PNOv0T34q-QFBiVSyYlcw.png" : "https://miro.medium.com/v2/resize:fit:1400/1*uiYye9J142y8fIZGRnufEw.png"}
+                alt="description"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Box>
+          </Stack>
+
+          <Box sx={{ paddingTop: "50vh" }}>
             <Typography variant="h3" gutterBottom>
               Wo studieren?
             </Typography>
@@ -92,7 +94,6 @@ function App() {
             </Typography>
             <img src="https://crosswater-job-guide.com/wp-content/uploads/2019/07/picture_DEKRA_H%C3%A4ufigste-Aufgaben-von-Softwareentwicklern.jpg" alt="" />
             <img style={{ maxWidth: "80vw" }} src="https://pixel-shot.com/get_image/i-8000065-0.JPG" alt="" />
-            <img src="https://wiki.selfhtml.org/images/thumb/7/78/HTML-CSS-JS.svg/512px-HTML-CSS-JS.svg.png" alt="" />
           </Box>
 
           <Box sx={{ paddingTop: "500px" }}>

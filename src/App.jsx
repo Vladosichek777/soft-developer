@@ -62,7 +62,11 @@ function App() {
             </Stack>
           </Box>
           <Box sx={{ width: "40%", height: "400px", outline: "1px solid red" }}>
-            <img src={state === "html" ? "/html.png" : state === "css" ? "/css.png" : "/js.png"} alt="description" style={{ width: "100%", height: "100%" }} />
+            <img
+              src={state === "html" ? "https://henryegloff.com/media/How-to-Code-a-Basic-Webpage-Using-HTML-Tutorial-2.jpg" : state === "css" ? "https://miro.medium.com/v2/resize:fit:768/1*6PNOv0T34q-QFBiVSyYlcw.png" : "https://miro.medium.com/v2/resize:fit:1400/1*uiYye9J142y8fIZGRnufEw.png"}
+              alt="description"
+              style={{ width: "100%", height: "100%" }}
+            />
           </Box>
         </Stack>
         <Stack spacing={2} direction="column" sx={{ marginTop: "100vh" }}>
@@ -88,23 +92,22 @@ function App() {
             </Typography>
             <img src="https://crosswater-job-guide.com/wp-content/uploads/2019/07/picture_DEKRA_H%C3%A4ufigste-Aufgaben-von-Softwareentwicklern.jpg" alt="" />
             <img style={{ maxWidth: "80vw" }} src="https://pixel-shot.com/get_image/i-8000065-0.JPG" alt="" />
+            <img src="https://wiki.selfhtml.org/images/thumb/7/78/HTML-CSS-JS.svg/512px-HTML-CSS-JS.svg.png" alt="" />
           </Box>
 
           <Box sx={{ paddingTop: "500px" }}>
             <Typography variant="h3" gutterBottom>
               Arbeitsort
             </Typography>
-            <img src="/ort3.png" alt="" />
-            <img src="/ort.png" alt="" />
-            <img src="/ort2.png" alt="" />
+            <img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period1/2013/02/27/Photos/motivations--621x414--621x414.jpg" alt="" />
+            <img src="https://www.kickidler.com/assets/image-cache/images/tickets/945/1.56a72ded.jpg" alt="" />
           </Box>
 
           <Box sx={{ paddingTop: "500px" }}>
             <Typography variant="h3" gutterBottom>
               Gehalt:
             </Typography>
-            <img style={{ maxWidth: "80vw" }} src="/gehalt.png" alt="" />
-            <img style={{ maxWidth: "80vw" }} src="/gehalt2.png" alt="" />
+            <img style={{ maxWidth: "80vw" }} src="https://cdn.statcdn.com/Infographic/images/normal/29696.jpeg" alt="" />
           </Box>
 
           <Box sx={{ paddingTop: "500px" }}>
